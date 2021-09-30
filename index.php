@@ -21,7 +21,7 @@ foreach (array_combine($Names,$Emails) as $name => $email) {
     
     
     
-    
+    sleep(1);
     try{$mailer->send($mail); echo "Posláno uživateli: " . $name . " s emailem: " . $email . "<br />";}
     catch(Exception $e){echo $e->getMessage();}
 }
